@@ -72,7 +72,7 @@ function Sidebar() {
                             })}
 
                             <li className='flex-center cursor-pointer gap-2 p-4'>
-                                <UserButton forceRedirectUrl='/' showName />
+                                <UserButton showName />
                             </li>
                         </ul>
                     </SignedIn>

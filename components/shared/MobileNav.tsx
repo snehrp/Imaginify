@@ -32,7 +32,7 @@ function MobileNav() {
 
             <nav className='flex gap-2'>
                 <SignedIn>
-                    <UserButton forceRedirectUrl='/' />
+                    <UserButton />
 
                     <Sheet>
                         <SheetTrigger>
