@@ -61,6 +61,7 @@ export async function POST(req: Request) {
     // CREATE
     if (eventType === "user.created") {
         const { id, email_addresses, image_url, first_name, last_name, username } = evt.data;
+        // Retrieves the user data from the evt.data
 
         const user = {
             clerkId: id,
@@ -72,6 +73,7 @@ export async function POST(req: Request) {
         };
 
         const newUser = await createUser(user);
+        // Above function creates the new User in the MongoDB and returns it to newUser
 
         // Set public metadata
         if (newUser) {
@@ -81,7 +83,9 @@ export async function POST(req: Request) {
                 },
             });
         }
+        // Above just simply merges the clerk ID with our database user ID
 
+        
         return NextResponse.json({ message: "OK", user: newUser });
     }
 

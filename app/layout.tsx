@@ -28,6 +28,7 @@ export default function RootLayout({
       signInFallbackRedirectUrl='/'
       signUpFallbackRedirectUrl='/'
     >
+
       <html lang="en">
         <body
           className={cn('font-IBMPlex antialiased', IBMPlex.variable)}
