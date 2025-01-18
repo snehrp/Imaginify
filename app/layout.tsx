@@ -34,6 +34,7 @@ export default function RootLayout({
           className={cn('font-IBMPlex antialiased', IBMPlex.variable)}
         >
           {children}
+          
         </body>
       </html>
     </ClerkProvider>
